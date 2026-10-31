@@ -1,43 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pac-Man</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: #0b1020;
-        color: #f5f5ff;
-        font-family: Arial, sans-serif;
-      }
-      .card {
-        max-width: 640px;
-        padding: 2rem 2.5rem;
-        border: 1px solid #2d3a5a;
-        border-radius: 12px;
-        background: rgba(17, 24, 39, 0.8);
-        text-align: center;
-      }
-      h1 {
-        margin-top: 0;
-        color: #ffd84d;
-      }
-      p {
-        line-height: 1.6;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux Command Index</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: Arial, sans-serif;
+      padding: 32px 18px 60px;
+    }
+    h1 {
+      text-align: center;
+      color: #7dd3fc;
+      margin-bottom: 20px;
+    }
+    .top-link {
+      display: block;
+      max-width: 1100px;
+      margin: 0 auto 28px;
+      text-align: center;
+      color: #86efac;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #facc15;
+      font-size: 1.15rem;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .list a {
+      color: #bfdbfe;
+      text-decoration: none;
+    }
+    .list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Linux Command Categories</h1>
+  <a class="top-link" href="linux.html">Open Full Command List</a>
+
+  <div class="grid">
     <div class="card">
-      <h1>Pac-Man</h1>
-      <p>This repository contains a desktop Pygame game, not a browser app.</p>
-      <p>To run the game locally, use Python directly:</p>
-      <pre>python .\pacman_main.py</pre>
-      <p>This container is set up to serve the project through Nginx as a static site.</p>
+      <h2>Navigation & Files</h2>
+      <div class="list">
+        <a href="linux.html">ls</a>
+        <a href="linux.html">pwd</a>
+        <a href="linux.html">cd</a>
+        <a href="linux.html">cp</a>
+        <a href="linux.html">mv</a>
+        <a href="linux.html">find</a>
+        <a href="linux.html">which</a>
+      </div>
     </div>
-  </body>
+
+    <div class="card">
+      <h2>Viewing & Editing</h2>
+      <div class="list">
+        <a href="linux.html">cat</a>
+        <a href="linux.html">less</a>
+        <a href="linux.html">more</a>
+        <a href="linux.html">head</a>
+        <a href="linux.html">tail</a>
+        <a href="linux.html">grep</a>
+        <a href="linux.html">sed</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Permissions & Users</h2>
+      <div class="list">
+        <a href="linux.html">chmod</a>
+        <a href="linux.html">chown</a>
+        <a href="linux.html">chgrp</a>
+        <a href="linux.html">sudo</a>
+        <a href="linux.html">su</a>
+        <a href="linux.html">useradd</a>
+        <a href="linux.html">passwd</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>System & Processes</h2>
+      <div class="list">
+        <a href="linux.html">ps</a>
+        <a href="linux.html">top</a>
+        <a href="linux.html">htop</a>
+        <a href="linux.html">kill</a>
+        <a href="linux.html">pkill</a>
+        <a href="linux.html">jobs</a>
+        <a href="linux.html">systemctl</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Network</h2>
+      <div class="list">
+        <a href="linux.html">ping</a>
+        <a href="linux.html">curl</a>
+        <a href="linux.html">wget</a>
+        <a href="linux.html">ssh</a>
+        <a href="linux.html">scp</a>
+        <a href="linux.html">rsync</a>
+        <a href="linux.html">ip</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Packaging</h2>
+      <div class="list">
+        <a href="linux.html">apt</a>
+        <a href="linux.html">yum</a>
+        <a href="linux.html">dnf</a>
+        <a href="linux.html">pacman</a>
+        <a href="linux.html">rpm</a>
+        <a href="linux.html">dpkg</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Archives</h2>
+      <div class="list">
+        <a href="linux.html">tar</a>
+        <a href="linux.html">zip</a>
+        <a href="linux.html">unzip</a>
+        <a href="linux.html">gzip</a>
+        <a href="linux.html">bzip2</a>
+        <a href="linux.html">xz</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Utilities</h2>
+      <div class="list">
+        <a href="linux.html">date</a>
+        <a href="linux.html">env</a>
+        <a href="linux.html">export</a>
+        <a href="linux.html">man</a>
+        <a href="linux.html">history</a>
+        <a href="linux.html">sort</a>
+        <a href="linux.html">wc</a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
