@@ -1,0 +1,403 @@
+Top 100 Linux Commands with Examples
+
+1. ls
+   - Example 1: ls
+   - Example 2: ls -la
+
+2. pwd
+   - Example 1: pwd
+   - Example 2: pwd /home/user
+
+3. cd
+   - Example 1: cd /var/log
+   - Example 2: cd ~/Downloads
+
+4. mkdir
+   - Example 1: mkdir project
+   - Example 2: mkdir -p project/src/components
+
+5. rmdir
+   - Example 1: rmdir empty_dir
+   - Example 2: rmdir /tmp/old_folder
+
+6. rm
+   - Example 1: rm file.txt
+   - Example 2: rm -rf build_dir
+
+7. cp
+   - Example 1: cp file.txt backup.txt
+   - Example 2: cp -r folder /tmp/folder_backup
+
+8. mv
+   - Example 1: mv file.txt newname.txt
+   - Example 2: mv old_dir /tmp/new_dir
+
+9. touch
+   - Example 1: touch notes.txt
+   - Example 2: touch report.csv
+
+10. cat
+   - Example 1: cat file.txt
+   - Example 2: cat /etc/os-release
+
+11. less
+   - Example 1: less /var/log/syslog
+   - Example 2: less README.md
+
+12. more
+   - Example 1: more file.txt
+   - Example 2: more /etc/hosts
+
+13. head
+   - Example 1: head file.txt
+   - Example 2: head -n 20 file.txt
+
+14. tail
+   - Example 1: tail file.txt
+   - Example 2: tail -f /var/log/syslog
+
+15. grep
+   - Example 1: grep "error" logfile.txt
+   - Example 2: grep -i "linux" *.txt
+
+16. find
+   - Example 1: find . -name "*.log"
+   - Example 2: find /home -type f -size +10M
+
+17. locate
+   - Example 1: locate nginx.conf
+   - Example 2: locate python3
+
+18. which
+   - Example 1: which python3
+   - Example 2: which git
+
+19. whereis
+   - Example 1: whereis bash
+   - Example 2: whereis mysql
+
+20. uname
+   - Example 1: uname -a
+   - Example 2: uname -s
+
+21. whoami
+   - Example 1: whoami
+   - Example 2: whoami && id
+
+22. id
+   - Example 1: id
+   - Example 2: id username
+
+23. sudo
+   - Example 1: sudo apt update
+   - Example 2: sudo systemctl restart nginx
+
+24. su
+   - Example 1: su root
+   - Example 2: su - username
+
+25. passwd
+   - Example 1: passwd
+   - Example 2: passwd username
+
+26. chmod
+   - Example 1: chmod 755 script.sh
+   - Example 2: chmod +x script.sh
+
+27. chown
+   - Example 1: chown user:user file.txt
+   - Example 2: chown -R user:user folder
+
+28. df
+   - Example 1: df -h
+   - Example 2: df -T
+
+29. du
+   - Example 1: du -sh .
+   - Example 2: du -h /var/log
+
+30. free
+   - Example 1: free -h
+   - Example 2: free -m
+
+31. top
+   - Example 1: top
+   - Example 2: top -u user
+
+32. htop
+   - Example 1: htop
+   - Example 2: htop -d 10
+
+33. ps
+   - Example 1: ps aux
+   - Example 2: ps -ef | grep nginx
+
+34. kill
+   - Example 1: kill 1234
+   - Example 2: kill -9 1234
+
+35. pkill
+   - Example 1: pkill firefox
+   - Example 2: pkill -f python
+
+36. jobs
+   - Example 1: jobs
+   - Example 2: jobs -l
+
+37. fg
+   - Example 1: fg
+   - Example 2: fg %1
+
+38. bg
+   - Example 1: bg
+   - Example 2: bg %2
+
+39. shutdown
+   - Example 1: shutdown now
+   - Example 2: shutdown -r +10
+
+40. reboot
+   - Example 1: reboot
+   - Example 2: reboot -f
+
+41. history
+   - Example 1: history
+   - Example 2: history | tail -n 20
+
+42. clear
+   - Example 1: clear
+   - Example 2: printf '\033c'
+
+43. alias
+   - Example 1: alias ll='ls -al'
+   - Example 2: alias grep='grep --color=auto'
+
+44. unalias
+   - Example 1: unalias ll
+   - Example 2: unalias grep
+
+45. echo
+   - Example 1: echo hello
+   - Example 2: echo $PATH
+
+46. printf
+   - Example 1: printf "%s\n" "Hello"
+   - Example 2: printf "Name: %s\n" "$USER"
+
+47. date
+   - Example 1: date
+   - Example 2: date '+%Y-%m-%d %H:%M:%S'
+
+48. cal
+   - Example 1: cal
+   - Example 2: cal 2026
+
+49. who
+   - Example 1: who
+   - Example 2: who -a
+
+50. w
+   - Example 1: w
+   - Example 2: w -h
+
+51. uptime
+   - Example 1: uptime
+   - Example 2: uptime -p
+
+52. ifconfig
+   - Example 1: ifconfig
+   - Example 2: ifconfig eth0
+
+53. ip
+   - Example 1: ip addr
+   - Example 2: ip route
+
+54. ss
+   - Example 1: ss -tulpn
+   - Example 2: ss -a
+
+55. ping
+   - Example 1: ping google.com
+   - Example 2: ping -c 5 localhost
+
+56. curl
+   - Example 1: curl https://example.com
+   - Example 2: curl -I https://example.com
+
+57. wget
+   - Example 1: wget https://example.com/file.zip
+   - Example 2: wget -O backup.zip https://example.com/file.zip
+
+58. tar
+   - Example 1: tar -czf backup.tar.gz folder
+   - Example 2: tar -xzf backup.tar.gz
+
+59. unzip
+   - Example 1: unzip file.zip
+   - Example 2: unzip -l file.zip
+
+60. zip
+   - Example 1: zip backup.zip folder
+   - Example 2: zip -r backup.zip folder
+
+61. apt
+   - Example 1: apt update
+   - Example 2: apt install nginx
+
+62. yum
+   - Example 1: yum install git
+   - Example 2: yum update
+
+63. dnf
+   - Example 1: dnf install python3
+   - Example 2: dnf update
+
+64. pacman
+   - Example 1: pacman -Syu
+   - Example 2: pacman -S git
+
+65. systemctl
+   - Example 1: systemctl status ssh
+   - Example 2: systemctl restart nginx
+
+66. journalctl
+   - Example 1: journalctl -xe
+   - Example 2: journalctl -u nginx
+
+67. service
+   - Example 1: service nginx start
+   - Example 2: service ssh status
+
+68. useradd
+   - Example 1: useradd alice
+   - Example 2: useradd -m -s /bin/bash alice
+
+69. userdel
+   - Example 1: userdel alice
+   - Example 2: userdel -r alice
+
+70. passwd
+   - Example 1: passwd alice
+   - Example 2: passwd -l alice
+
+71. groupadd
+   - Example 1: groupadd developers
+   - Example 2: groupadd admins
+
+72. groupdel
+   - Example 1: groupdel developers
+   - Example 2: groupdel admins
+
+73. nc
+   - Example 1: nc -vz localhost 80
+   - Example 2: nc -l 8080
+
+74. ssh
+   - Example 1: ssh user@server
+   - Example 2: ssh -i key.pem user@server
+
+75. scp
+   - Example 1: scp file.txt user@server:/tmp/
+   - Example 2: scp -r folder user@server:/opt/
+
+76. rsync
+   - Example 1: rsync -av folder/ user@server:/backup/
+   - Example 2: rsync -az /var/www user@server:/srv/
+
+77. cron
+   - Example 1: crontab -l
+   - Example 2: crontab -e
+
+78. crontab
+   - Example 1: crontab -l
+   - Example 2: crontab -e
+
+79. env
+   - Example 1: env
+   - Example 2: env | grep PATH
+
+80. export
+   - Example 1: export JAVA_HOME=/usr/lib/jvm/java
+   - Example 2: export PATH=$PATH:/usr/local/bin
+
+81. set
+   - Example 1: set
+   - Example 2: set | grep USER
+
+82. unset
+   - Example 1: unset JAVA_HOME
+   - Example 2: unset PATH
+
+83. source
+   - Example 1: source ~/.bashrc
+   - Example 2: source /etc/profile
+
+84. .
+   - Example 1: . ./script.sh
+   - Example 2: . /etc/profile
+
+85. man
+   - Example 1: man ls
+   - Example 2: man ssh
+
+86. apropos
+   - Example 1: apropos network
+   - Example 2: apropos firewall
+
+87. whatis
+   - Example 1: whatis ls
+   - Example 2: whatis grep
+
+88. chmod +x
+   - Example 1: chmod +x script.sh
+   - Example 2: chmod 700 script.sh
+
+89. chgrp
+   - Example 1: chgrp admin file.txt
+   - Example 2: chgrp -R webserver /var/www
+
+90. stat
+   - Example 1: stat file.txt
+   - Example 2: stat /etc/passwd
+
+91. diff
+   - Example 1: diff file1 file2
+   - Example 2: diff -u old.txt new.txt
+
+92. cmp
+   - Example 1: cmp file1 file2
+   - Example 2: cmp -l file1 file2
+
+93. sort
+   - Example 1: sort file.txt
+   - Example 2: sort -n numbers.txt
+
+94. uniq
+   - Example 1: uniq file.txt
+   - Example 2: sort file.txt | uniq
+
+95. wc
+   - Example 1: wc -l file.txt
+   - Example 2: wc -w file.txt
+
+96. cut
+   - Example 1: cut -d: -f1 /etc/passwd
+   - Example 2: cut -c 1-20 file.txt
+
+97. tee
+   - Example 1: ls | tee output.txt
+   - Example 2: cat file.txt | tee copied.txt
+
+98. xargs
+   - Example 1: ls | xargs rm
+   - Example 2: find . -name "*.txt" | xargs grep "hello"
+
+99. ln
+   - Example 1: ln -s /usr/bin/python3 python
+   - Example 2: ln file.txt backup_link
+
+100. envsubst
+   - Example 1: envsubst < config.template > config.env
+   - Example 2: export NAME=linux; envsubst <<< '$NAME'
+
+End of command list.
