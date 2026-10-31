@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 100 Linux Commands</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 24px;
+    }
+    h1 {
+      text-align: center;
+      color: #7dd3fc;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .block {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    }
+    .cmd {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #facc15;
+      margin-bottom: 10px;
+    }
+    .example {
+      background: #020617;
+      border-left: 3px solid #22c55e;
+      padding: 8px 10px;
+      margin-top: 8px;
+      border-radius: 6px;
+      font-family: Consolas, monospace;
+      font-size: 0.92rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: #d1fae5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Top 100 Linux Commands</h1>
+  <div class="grid">
+    <div class="block"><div class="cmd">1. ls</div><div class="example">Example 1: ls
+Example 2: ls -la</div></div>
+    <div class="block"><div class="cmd">2. pwd</div><div class="example">Example 1: pwd
+Example 2: pwd /home/user</div></div>
+    <div class="block"><div class="cmd">3. cd</div><div class="example">Example 1: cd /var/log
+Example 2: cd ~/Downloads</div></div>
+    <div class="block"><div class="cmd">4. mkdir</div><div class="example">Example 1: mkdir project
+Example 2: mkdir -p project/src/components</div></div>
+    <div class="block"><div class="cmd">5. rmdir</div><div class="example">Example 1: rmdir empty_dir
+Example 2: rmdir /tmp/old_folder</div></div>
+    <div class="block"><div class="cmd">6. rm</div><div class="example">Example 1: rm file.txt
+Example 2: rm -rf build_dir</div></div>
+    <div class="block"><div class="cmd">7. cp</div><div class="example">Example 1: cp file.txt backup.txt
+Example 2: cp -r folder /tmp/folder_backup</div></div>
+    <div class="block"><div class="cmd">8. mv</div><div class="example">Example 1: mv file.txt newname.txt
+Example 2: mv old_dir /tmp/new_dir</div></div>
+    <div class="block"><div class="cmd">9. touch</div><div class="example">Example 1: touch notes.txt
+Example 2: touch report.csv</div></div>
+    <div class="block"><div class="cmd">10. cat</div><div class="example">Example 1: cat file.txt
+Example 2: cat /etc/os-release</div></div>
+    <div class="block"><div class="cmd">11. less</div><div class="example">Example 1: less /var/log/syslog
+Example 2: less README.md</div></div>
+    <div class="block"><div class="cmd">12. more</div><div class="example">Example 1: more file.txt
+Example 2: more /etc/hosts</div></div>
+    <div class="block"><div class="cmd">13. head</div><div class="example">Example 1: head file.txt
+Example 2: head -n 20 file.txt</div></div>
+    <div class="block"><div class="cmd">14. tail</div><div class="example">Example 1: tail file.txt
+Example 2: tail -f /var/log/syslog</div></div>
+    <div class="block"><div class="cmd">15. grep</div><div class="example">Example 1: grep "error" logfile.txt
+Example 2: grep -i "linux" *.txt</div></div>
+    <div class="block"><div class="cmd">16. find</div><div class="example">Example 1: find . -name "*.log"
+Example 2: find /home -type f -size +10M</div></div>
+    <div class="block"><div class="cmd">17. locate</div><div class="example">Example 1: locate nginx.conf
+Example 2: locate python3</div></div>
+    <div class="block"><div class="cmd">18. which</div><div class="example">Example 1: which python3
+Example 2: which git</div></div>
+    <div class="block"><div class="cmd">19. whereis</div><div class="example">Example 1: whereis bash
+Example 2: whereis mysql</div></div>
+    <div class="block"><div class="cmd">20. uname</div><div class="example">Example 1: uname -a
+Example 2: uname -s</div></div>
+    <div class="block"><div class="cmd">21. whoami</div><div class="example">Example 1: whoami
+Example 2: whoami && id</div></div>
+    <div class="block"><div class="cmd">22. id</div><div class="example">Example 1: id
+Example 2: id username</div></div>
+    <div class="block"><div class="cmd">23. sudo</div><div class="example">Example 1: sudo apt update
+Example 2: sudo systemctl restart nginx</div></div>
+    <div class="block"><div class="cmd">24. su</div><div class="example">Example 1: su root
+Example 2: su - username</div></div>
+    <div class="block"><div class="cmd">25. passwd</div><div class="example">Example 1: passwd
+Example 2: passwd username</div></div>
+    <div class="block"><div class="cmd">26. chmod</div><div class="example">Example 1: chmod 755 script.sh
+Example 2: chmod +x script.sh</div></div>
+    <div class="block"><div class="cmd">27. chown</div><div class="example">Example 1: chown user:user file.txt
+Example 2: chown -R user:user folder</div></div>
+    <div class="block"><div class="cmd">28. df</div><div class="example">Example 1: df -h
+Example 2: df -T</div></div>
+    <div class="block"><div class="cmd">29. du</div><div class="example">Example 1: du -sh .
+Example 2: du -h /var/log</div></div>
+    <div class="block"><div class="cmd">30. free</div><div class="example">Example 1: free -h
+Example 2: free -m</div></div>
+    <div class="block"><div class="cmd">31. top</div><div class="example">Example 1: top
+Example 2: top -u user</div></div>
+    <div class="block"><div class="cmd">32. htop</div><div class="example">Example 1: htop
+Example 2: htop -d 10</div></div>
+    <div class="block"><div class="cmd">33. ps</div><div class="example">Example 1: ps aux
+Example 2: ps -ef | grep nginx</div></div>
+    <div class="block"><div class="cmd">34. kill</div><div class="example">Example 1: kill 1234
+Example 2: kill -9 1234</div></div>
+    <div class="block"><div class="cmd">35. pkill</div><div class="example">Example 1: pkill firefox
+Example 2: pkill -f python</div></div>
+    <div class="block"><div class="cmd">36. jobs</div><div class="example">Example 1: jobs
+Example 2: jobs -l</div></div>
+    <div class="block"><div class="cmd">37. fg</div><div class="example">Example 1: fg
+Example 2: fg %1</div></div>
+    <div class="block"><div class="cmd">38. bg</div><div class="example">Example 1: bg
+Example 2: bg %2</div></div>
+    <div class="block"><div class="cmd">39. shutdown</div><div class="example">Example 1: shutdown now
+Example 2: shutdown -r +10</div></div>
+    <div class="block"><div class="cmd">40. reboot</div><div class="example">Example 1: reboot
+Example 2: reboot -f</div></div>
+    <div class="block"><div class="cmd">41. history</div><div class="example">Example 1: history
+Example 2: history | tail -n 20</div></div>
+    <div class="block"><div class="cmd">42. clear</div><div class="example">Example 1: clear
+Example 2: printf '\033c'</div></div>
+    <div class="block"><div class="cmd">43. alias</div><div class="example">Example 1: alias ll='ls -al'
+Example 2: alias grep='grep --color=auto'</div></div>
+    <div class="block"><div class="cmd">44. unalias</div><div class="example">Example 1: unalias ll
+Example 2: unalias grep</div></div>
+    <div class="block"><div class="cmd">45. echo</div><div class="example">Example 1: echo hello
+Example 2: echo $PATH</div></div>
+    <div class="block"><div class="cmd">46. printf</div><div class="example">Example 1: printf "%s\n" "Hello"
+Example 2: printf "Name: %s\n" "$USER"</div></div>
+    <div class="block"><div class="cmd">47. date</div><div class="example">Example 1: date
+Example 2: date '+%Y-%m-%d %H:%M:%S'</div></div>
+    <div class="block"><div class="cmd">48. cal</div><div class="example">Example 1: cal
+Example 2: cal 2026</div></div>
+    <div class="block"><div class="cmd">49. who</div><div class="example">Example 1: who
+Example 2: who -a</div></div>
+    <div class="block"><div class="cmd">50. w</div><div class="example">Example 1: w
+Example 2: w -h</div></div>
+    <div class="block"><div class="cmd">51. uptime</div><div class="example">Example 1: uptime
+Example 2: uptime -p</div></div>
+    <div class="block"><div class="cmd">52. ifconfig</div><div class="example">Example 1: ifconfig
+Example 2: ifconfig eth0</div></div>
+    <div class="block"><div class="cmd">53. ip</div><div class="example">Example 1: ip addr
+Example 2: ip route</div></div>
+    <div class="block"><div class="cmd">54. ss</div><div class="example">Example 1: ss -tulpn
+Example 2: ss -a</div></div>
+    <div class="block"><div class="cmd">55. ping</div><div class="example">Example 1: ping google.com
+Example 2: ping -c 5 localhost</div></div>
+    <div class="block"><div class="cmd">56. curl</div><div class="example">Example 1: curl https://example.com
+Example 2: curl -I https://example.com</div></div>
+    <div class="block"><div class="cmd">57. wget</div><div class="example">Example 1: wget https://example.com/file.zip
+Example 2: wget -O backup.zip https://example.com/file.zip</div></div>
+    <div class="block"><div class="cmd">58. tar</div><div class="example">Example 1: tar -czf backup.tar.gz folder
+Example 2: tar -xzf backup.tar.gz</div></div>
+    <div class="block"><div class="cmd">59. unzip</div><div class="example">Example 1: unzip file.zip
+Example 2: unzip -l file.zip</div></div>
+    <div class="block"><div class="cmd">60. zip</div><div class="example">Example 1: zip backup.zip folder
+Example 2: zip -r backup.zip folder</div></div>
+    <div class="block"><div class="cmd">61. apt</div><div class="example">Example 1: apt update
+Example 2: apt install nginx</div></div>
+    <div class="block"><div class="cmd">62. yum</div><div class="example">Example 1: yum install git
+Example 2: yum update</div></div>
+    <div class="block"><div class="cmd">63. dnf</div><div class="example">Example 1: dnf install python3
+Example 2: dnf update</div></div>
+    <div class="block"><div class="cmd">64. pacman</div><div class="example">Example 1: pacman -Syu
+Example 2: pacman -S git</div></div>
+    <div class="block"><div class="cmd">65. systemctl</div><div class="example">Example 1: systemctl status ssh
+Example 2: systemctl restart nginx</div></div>
+    <div class="block"><div class="cmd">66. journalctl</div><div class="example">Example 1: journalctl -xe
+Example 2: journalctl -u nginx</div></div>
+    <div class="block"><div class="cmd">67. service</div><div class="example">Example 1: service nginx start
+Example 2: service ssh status</div></div>
+    <div class="block"><div class="cmd">68. useradd</div><div class="example">Example 1: useradd alice
+Example 2: useradd -m -s /bin/bash alice</div></div>
+    <div class="block"><div class="cmd">69. userdel</div><div class="example">Example 1: userdel alice
+Example 2: userdel -r alice</div></div>
+    <div class="block"><div class="cmd">70. passwd</div><div class="example">Example 1: passwd alice
+Example 2: passwd -l alice</div></div>
+    <div class="block"><div class="cmd">71. groupadd</div><div class="example">Example 1: groupadd developers
+Example 2: groupadd admins</div></div>
+    <div class="block"><div class="cmd">72. groupdel</div><div class="example">Example 1: groupdel developers
+Example 2: groupdel admins</div></div>
+    <div class="block"><div class="cmd">73. nc</div><div class="example">Example 1: nc -vz localhost 80
+Example 2: nc -l 8080</div></div>
+    <div class="block"><div class="cmd">74. ssh</div><div class="example">Example 1: ssh user@server
+Example 2: ssh -i key.pem user@server</div></div>
+    <div class="block"><div class="cmd">75. scp</div><div class="example">Example 1: scp file.txt user@server:/tmp/
+Example 2: scp -r folder user@server:/opt/</div></div>
+    <div class="block"><div class="cmd">76. rsync</div><div class="example">Example 1: rsync -av folder/ user@server:/backup/
+Example 2: rsync -az /var/www user@server:/srv/</div></div>
+    <div class="block"><div class="cmd">77. cron</div><div class="example">Example 1: crontab -l
+Example 2: crontab -e</div></div>
+    <div class="block"><div class="cmd">78. crontab</div><div class="example">Example 1: crontab -l
+Example 2: crontab -e</div></div>
+    <div class="block"><div class="cmd">79. env</div><div class="example">Example 1: env
+Example 2: env | grep PATH</div></div>
+    <div class="block"><div class="cmd">80. export</div><div class="example">Example 1: export JAVA_HOME=/usr/lib/jvm/java
+Example 2: export PATH=$PATH:/usr/local/bin</div></div>
+    <div class="block"><div class="cmd">81. set</div><div class="example">Example 1: set
+Example 2: set | grep USER</div></div>
+    <div class="block"><div class="cmd">82. unset</div><div class="example">Example 1: unset JAVA_HOME
+Example 2: unset PATH</div></div>
+    <div class="block"><div class="cmd">83. source</div><div class="example">Example 1: source ~/.bashrc
+Example 2: source /etc/profile</div></div>
+    <div class="block"><div class="cmd">84. .</div><div class="example">Example 1: . ./script.sh
+Example 2: . /etc/profile</div></div>
+    <div class="block"><div class="cmd">85. man</div><div class="example">Example 1: man ls
+Example 2: man ssh</div></div>
+    <div class="block"><div class="cmd">86. apropos</div><div class="example">Example 1: apropos network
+Example 2: apropos firewall</div></div>
+    <div class="block"><div class="cmd">87. whatis</div><div class="example">Example 1: whatis ls
+Example 2: whatis grep</div></div>
+    <div class="block"><div class="cmd">88. chmod +x</div><div class="example">Example 1: chmod +x script.sh
+Example 2: chmod 700 script.sh</div></div>
+    <div class="block"><div class="cmd">89. chgrp</div><div class="example">Example 1: chgrp admin file.txt
+Example 2: chgrp -R webserver /var/www</div></div>
+    <div class="block"><div class="cmd">90. stat</div><div class="example">Example 1: stat file.txt
+Example 2: stat /etc/passwd</div></div>
+    <div class="block"><div class="cmd">91. diff</div><div class="example">Example 1: diff file1 file2
+Example 2: diff -u old.txt new.txt</div></div>
+    <div class="block"><div class="cmd">92. cmp</div><div class="example">Example 1: cmp file1 file2
+Example 2: cmp -l file1 file2</div></div>
+    <div class="block"><div class="cmd">93. sort</div><div class="example">Example 1: sort file.txt
+Example 2: sort -n numbers.txt</div></div>
+    <div class="block"><div class="cmd">94. uniq</div><div class="example">Example 1: uniq file.txt
+Example 2: sort file.txt | uniq</div></div>
+    <div class="block"><div class="cmd">95. wc</div><div class="example">Example 1: wc -l file.txt
+Example 2: wc -w file.txt</div></div>
+    <div class="block"><div class="cmd">96. cut</div><div class="example">Example 1: cut -d: -f1 /etc/passwd
+Example 2: cut -c 1-20 file.txt</div></div>
+    <div class="block"><div class="cmd">97. tee</div><div class="example">Example 1: ls | tee output.txt
+Example 2: cat file.txt | tee copied.txt</div></div>
+    <div class="block"><div class="cmd">98. xargs</div><div class="example">Example 1: ls | xargs rm
+Example 2: find . -name "*.txt" | xargs grep "hello"</div></div>
+    <div class="block"><div class="cmd">99. ln</div><div class="example">Example 1: ln -s /usr/bin/python3 python
+Example 2: ln file.txt backup_link</div></div>
+    <div class="block"><div class="cmd">100. envsubst</div><div class="example">Example 1: envsubst < config.template > config.env
+Example 2: export NAME=linux; envsubst <<< '$NAME'</div></div>
+  </div>
+</body>
+</html>
