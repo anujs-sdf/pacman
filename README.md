@@ -80,6 +80,42 @@ Then open:
 http://localhost:8080
 ```
 
+### Linux deployment
+On Linux, install Python and Pygame in your environment, then launch the game directly.
+
+```bash
+cd /path/to/pacman
+python3 -m pip install pygame
+python3 pacman_main.py
+```
+
+For a containerized static deployment on Linux:
+
+```bash
+cd /path/to/pacman
+sudo apt update
+sudo apt install docker.io docker-compose-plugin -y
+sudo docker compose up --build
+```
+
+### FreeBSD deployment
+On FreeBSD, install Python and Pygame with the package manager and run the same game entry.
+
+```bash
+cd /path/to/pacman
+pkg install python py39-pygame
+python3 pacman_main.py
+```
+
+For a basic container-based deployment on FreeBSD:
+
+```bash
+cd /path/to/pacman
+pkg install docker
+service docker onestart
+docker compose up --build
+```
+
 ## Great Bharat: culture, diversity, and greatness
 
 Great Bharat is one of the oldest and richest civilizations in the world. It has shaped ideas in philosophy, science, mathematics, art, literature, and spirituality for thousands of years. From the ancient Indus Valley culture to later empires like the Mauryas and Guptas, Bharat has always been a land of wisdom, creativity, and resilience.
